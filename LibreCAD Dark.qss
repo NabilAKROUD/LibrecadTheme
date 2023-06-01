@@ -1,0 +1,35 @@
+/*QWidget > QFrame   {background:#969696;  color:#9cff9c; border:0.5px solid #b8b8b8; font-family:"Consolas"}*/
+
+
+QMenu                { background:#868686;color:#ff0000;  }
+QMenu::item          { color:#000000 }
+QMenu::item:selected { color:#b4b4b4 }
+QMenu::item:checked  { background: #4caa58;color:#ddffee;  }
+QMenu::icon:selected { color:#818181 }
+
+QToolBar             { background:#3c3c3c;   }
+QToolButton          { background:#807b7f;                        border:#aaaaaa; border-style: outset; border-width: 0.5px;}
+QToolButton:checked  { background:#00cb65;   border:1px solid #000000}
+QToolButton:hover    { background:#0af80a;   border:1px #00cb65}
+
+QPushButton          {background: gray }
+
+QToolTip,QWhatsThis  {background-color: #333232; color: #00ff90}
+
+QStatusBar           { background:#616161}
+QMenuBar             { background:#616161}
+QTextEdit            { background:#000000;  color:#76c909; border: 1px solid #00ff90;}
+
+QMainWindow          { background:#616161}
+QDialog              { background:#b8b500}
+QDockWidget          { background:#a7a7a7}
+
+QAbstractScrollArea { background:rgba(0,0,0,70) }
+QMdiArea            { background:#021803 }
+QComboBox           { background:#979797 }
+
+
+
+QDockWidget::title { text-align: center; background:rgba(0, 255, 55, 0.1); border: .5px solid white}
+QDockWidget::close-button { background:rgba(255, 255, 255, 0.8)}
+QDockWidget::float-button { background:rgba(255, 255, 255, 0.5)}
