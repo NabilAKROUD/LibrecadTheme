@@ -1,5 +1,6 @@
-/*QWidget > QFrame   {background:#969696;  color:#9cff9c; border:0.5px solid #b8b8b8; font-family:"Consolas"}*/
-
+/*وضع ليبريكاد الداكن مقدم من عند نبيل عكرود
+LibreCAD Dark Theme by Nabil AKROUD
+2023*/
 
 QMenu                { background:#868686;color:#ff0000;  }
 QMenu::item          { color:#000000 }
@@ -27,8 +28,6 @@ QDockWidget          { background:#a7a7a7}
 QAbstractScrollArea { background:rgba(0,0,0,70) }
 QMdiArea            { background:#021803 }
 QComboBox           { background:#979797 }
-
-
 
 QDockWidget::title { text-align: center; background:rgba(0, 255, 55, 0.1); border: .5px solid white}
 QDockWidget::close-button { background:rgba(255, 255, 255, 0.8)}
