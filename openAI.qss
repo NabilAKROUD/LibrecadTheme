@@ -14,7 +14,7 @@ QToolBar {
     spacing: 3px;
 }
 
-/* Buttons     border: 0.5px solid transparent;*/
+/* Buttons */
 QToolButton {
     background-color: rgb(109, 109, 109);
     color: #cccccc;
@@ -32,6 +32,11 @@ QToolButton:checked {
     background-color: #5bb600;
 }
 
+QToolButton:disabled {
+    background-color: rgb(80, 80, 80);
+    color: rgb(150, 150, 150);
+}
+
 /* Menu bar */
 QMenuBar {
     background-color: gray;
@@ -46,10 +51,15 @@ QMenuBar::item:selected {
     background-color: #5bb600;
 }
 
+QMenuBar::item:hover {
+    background-color: #6abb19;
+}
+
 /* Menu */
 QMenu {
-    background-color: gray;
-    color: #000000;
+    background-color: rgb(109, 109, 109);
+    color: #cccccc;
+    border: 1px solid #5bb600;
 }
 
 QMenu::item:selected {
@@ -100,49 +110,60 @@ QListView {
 
 /* Table view */
 
-QTableView:active {selection-color: rgb(255, 0, 0);}
 
 QTableView {
     background-color: rgba(97, 97, 97, 0.575);
-    color: #ffffff;
+    color: #000000;
     font-family: monospace ;font-size: 11px;
-    border: 1px solid gray;
-    selection-background-color: #5bb600;
-    gridline-color: #64f504;
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    row-height: 5px;
+    gridline-color: rgba(135, 190, 137, 0.628);
+   /*selection-background-color: hsla(129, 100%, 50%, 0.25);
+    selection-color:#0008ff;*/
 
 }
-
+QTableView::item:selected {
+    background-color: hsla(129, 100%, 50%, 0.25); /* Background color for selected items */
+    color: rgb(0, 0, 0); /* Text color for selected items */
+    border: 1px solid green; /* Border around selected items */
+    font-weight: bold; /* Make the font bold for selected items */
+}
+QTableView::item:active {/* بلا تأثير */
+    color: rgba(0, 8, 255, 0.836); /* Background color for the active item */
+}
 
 
 /* Tree view */
 QTreeView {
     background-color: #808080;
-    color: #ffffff;
+    color: #000000;
     border: 1px solid gray;
-    selection-background-color: #5eff00;
+    selection-background-color: green;
 }
 
 
 /* Status bar */
 QStatusBar {
-    background-color: gray;
+    background-color: rgb(109, 109, 109);
     color: #cccccc;
 }
 
 /* File name tabs */
 QTabBar::tab {
-    background-color:grey;
+    background-color:rgb(128, 128, 128);
     color: #ffffff;
-    min-width: 60px;
-    min-height: 3px;
+    min-width: 5px;
+    max-height: 10px;
     padding: 3px;
     margin-right: 2px;
+    border: .5px solid rgba(255, 255, 255, 0.5);
 }
 
 QTabBar::tab:selected {
     background-color: #5bb600;
-    color: bold #000000;
-    font-weight: 200;
+    color: #000000;
+    font-weight: bold;
+
 }
 
 QDockWidget        {color: #cccccc;padding: 3px;
